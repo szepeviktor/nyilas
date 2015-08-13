@@ -1,0 +1,41 @@
+@import 'compass/css3';
+
+// BASIC COLORS //
+
+$white: #ffffff;
+$white-op: rgba(255, 255, 255, .5);
+$brown: #8b5641;
+$light-brown: #e4d7cf;
+$blue: #326791;
+$red: #840000;
+$dark-menu-line: rgba(29, 29, 29, .8);
+$brown-grd: rgba(146, 96, 73, .8);
+$blue-grd: rgba(50, 103, 145, .8);
+$blue-grd2: rgba(50, 103, 145, .4);
+$dark-brown-grd: rgba(126, 68, 50, .8);
+
+$grey-text: #7e7e7e;
+$brown-text: #d9baae;
+$dark-text: rgb(29, 29, 29);
+
+
+// GRADIENT COLORS //
+
+$grd-vanilla: #e6d1aa;
+$grd-brown: #7c422f;
+
+@mixin menu-grd-line {
+	background-color: $grd-vanilla; // Old browsers
+	@include filter-gradient($grd-vanilla, $grd-vanilla, horizontal); // IE6-9
+	@include background-image(linear-gradient(left, $grd-vanilla 0%, $grd-brown 40%, $grd-brown 60%, $grd-vanilla 100%));
+}
+
+@mixin carousel-grd {
+	@include background-image(linear-gradient(left,  rgba(30,87,153,0) 0%,#1e2022 50%,rgba(125,185,232,0) 100%));
+
+}
+
+
+
+
+

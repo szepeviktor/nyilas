@@ -1,0 +1,57 @@
+@import 'basic';
+@import 'colors';
+
+.subpage-top-holder {
+	height: 110px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+
+	img {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.subpage-title {
+	float: left;
+	padding-left: 190px;
+	font-size: 30px;
+	font-weight: lighter;
+	line-height: 110px;
+
+	@media screen and (max-width: $md-min-width) {
+		padding-left: 20px;
+	}
+}
+
+.subpage-link {
+	line-height: 110px;
+	float: right;
+
+	i {
+		padding-right: 15px;
+		color: $brown;
+	}
+
+	a {
+		color: $brown;
+
+		&:hover {
+			color: darken($brown, 10%);
+		}
+
+		&:after {
+			content: '|';
+			padding: 10px;
+		}
+
+		&:last-child:after {
+			content: ' ';
+		}
+	}
+}
+
+

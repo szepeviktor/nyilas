@@ -1,0 +1,183 @@
+@import 'basic';
+@import 'colors';
+
+.header {
+	background-color: $white;
+}
+
+.logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 190px;
+	height: 195px;
+	z-index: 999;
+}
+
+.mobile-nav {
+	height: 50px;
+	background-color: $white;
+
+	> .logo {
+		width: 80px;
+		left: 20px;
+	}
+
+	> i {
+		margin-top: 10px;
+		margin-right: 20px;
+		color: $blue;
+	}
+}
+
+
+.nav-line {
+	height: 105px;
+	width: 100%;
+	background-color: $white;
+}
+
+.grad-line {
+	@include menu-grd-line;
+	height: 6px;
+	width: 100%;
+}
+
+.sec-menu-line {
+	position: relative;
+	background-color: $dark-menu-line;
+	height: 35px;
+	width: 100%;
+	z-index: 888;
+}
+
+.sec-menu {
+	color: $white;
+}
+
+.navigation li,
+.sec-navigation li {
+	float: left;
+}
+
+.navigation {
+	padding-left: 170px;
+	padding-top: 45px;
+
+	li {
+		padding: 0 22px;
+		position: relative;
+
+		@media screen and (max-width: $lg-min-width) {
+			padding: 0 10px;
+		}
+
+		&:before {
+			content: url('../img/menu_dot.png');
+			width: 7px;
+			height: 7px;
+			position: absolute;
+			top: 2px;
+			left: -3px;
+
+			@media screen and (max-width: $lg-min-width) {
+				content: url('../img/menu_dot_small.png');
+			}
+		}
+
+		&:first-child:before {
+			content: ' ';
+		}
+
+		a {
+			color: $grey-text;
+			font-size: 15px;
+			line-height: 25px;
+
+			&:hover {
+				color: $dark-menu-line;
+				border-bottom: 2px solid $brown;
+			}
+		}
+	}
+}
+
+.sec-navigation {
+	padding-left: 180px;
+
+	li {
+		padding: 0 15px;
+		line-height: 35px;
+
+		a {
+			color: $brown-text;
+
+			&:hover {
+				color: lighten($brown-text, 10%);
+			}
+		}
+
+		&:last-child {
+			float: right;
+			color: $brown-text;
+			padding: 0;
+
+			a {
+				@include opacity(.5);
+				margin-right: 5px;
+
+				&:hover,
+				&.active {
+					@include opacity(1);
+				}
+			}
+		}
+	}
+}
+
+.sb-slidebar {
+	background-color: $light-brown;
+}
+
+.mobile-menu-list {
+	padding-left: 20px;
+
+	> li {
+		height: 35px;
+		line-height: 35px;
+		border-bottom: 1px solid $blue-grd2;
+
+		&:last-child {
+			border: 0;
+		}
+
+		a,
+		a:hover {
+			color: $blue;
+			padding-left: 15px;
+		}
+	}
+}
+
+.lang-select {
+	height: 50px;
+	padding-left: 35px;
+	padding-top: 15px;
+
+	a {
+		@include opacity(.6);
+		margin-right: 15px;
+	}
+
+	a.active {
+		@include opacity(1);
+	}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+@import 'basic';
+@import 'colors';
+
+.content-menu {
+	position: relative;
+	height: 160px;
+	overflow: hidden;
+
+	@media screen and (max-width: $md-min-width) {
+		height: 250px;
+	}
+
+	a,
+	a:hover {
+		width: 100%;
+		height: 100%;
+		display: block;
+		color: $white;
+		text-decoration: none;
+	}
+
+	.content-menu-btn {
+		@include transition(height, .3s);
+		height: 50px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		font-size: 18px;
+		color: $white;
+		line-height: 50px;
+
+		&:hover {
+			height: 60px;
+		}
+	}
+
+	.brown {
+		background-color: $brown-grd;
+	}
+
+	.blue {
+		background-color: $blue-grd;
+	}
+
+	.dark-brown {
+		background-color: $dark-brown-grd;
+	}
+
+	.content-menu-text {
+		float: left;
+		margin-left: 20px;
+		text-transform: uppercase;
+	}
+
+	.content-menu-icon {
+		float: right;
+		margin-right: 20px;
+	}
+}
+
+.left-side,
+.right-side {
+	padding-top: 2px;
+}
+
+.left-side {
+	background-color: $white;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+.right-side {
+	background-color: $light-brown;
+	padding-bottom: 30px;
+}
+
+
+.side-header {
+	height: 70px;
+	width: 100%;
+	border-left: 7px solid;
+	line-height: 70px;
+	color: $dark-text;
+	font-size: 18px;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+
+.sh-blue {
+	border-color: $blue;
+}
+
+.sh-brown {
+	border-color: $brown;
+}
+
+.right-section-box {
+	padding: 0 40px;
+	width: 100%;
+	height: 215px;
+	margin-bottom: 45px;
+
+	.section-box-content {
+		border: 1px solid $blue;
+		height: 215px;
+		position: relative;
+
+		.section-box-img {
+			position: relative;
+			height: 80px;
+			border-bottom: 2px solid $blue;
+			overflow: hidden;
+		}
+
+		.section-text-holder {
+			position: relative;
+			height: 135px;
+			overflow: hidden;
+			padding: 15px;
+		}
+
+		.section-box-text {
+			height: 100px;
+			overflow: hidden;
+		}
+
+		.section-box-btn {
+			position: absolute;
+			bottom: -30px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			width: 225px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			background-color: $blue;
+
+			a {
+				width: 225px;
+				height: 40px;
+				display: block;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 16px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+

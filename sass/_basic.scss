@@ -1,0 +1,88 @@
+@import 'colors';
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700);
+
+@font-face {
+	font-family: 'Acryle';
+	src: url('../fonts/AcryleScript.ttf');
+}
+
+// SCREEN HELPERS //
+
+$xs-max-width: 767px;
+$sm-min-width: 768px;
+$md-min-width: 992px;
+$lg-min-width: 1200px;
+
+body {
+	font-size: 14px;
+	background: url('../img/bgr_repeat_y.png') ;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.tiled-bgr {
+	background: url('../img/bg_tile.png') repeat-y;
+}
+
+.pd0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pdl10 {
+	padding-left: 10px;
+}
+
+.pdr20 {
+	padding-right: 20px;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+h2.static-page-title {
+	font-size: 23px;
+	color: $brown;
+	font-style: italic;
+	line-height: 60px;
+}
+
+h3.static-page-title {
+	font-weight: bold;
+	line-height: 23px;
+}
+
+.mgl10n {
+	margin-left: -10px;
+}
+
+.mgb40 {
+	margin-bottom: 40px
+}
+
+.subpage {
+	padding: 40px;
+}
+
+.white-bgr {
+	background-color: $white;
+}
+
+.brown-bgr {
+	background-color: $light-brown;
+}
+
+.blue-bold-txt {
+	color: $blue;
+	font-weight: 700;
+}
+
+.blue-light-txt {
+	color: $blue;
+	font-weight: 300;
+}
+
+
+
+

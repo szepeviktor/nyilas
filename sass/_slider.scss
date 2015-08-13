@@ -1,0 +1,161 @@
+@import 'basic';
+@import 'colors';
+
+.slider-holder {
+	position: relative;
+	height: 500px;
+	width: 100%;
+	background-color: $light-brown;
+	overflow: hidden;
+	margin-top: -35px;
+	z-index: 555;
+
+	@media screen and (max-width: $md-min-width) {
+		margin-top: 0;
+	}
+}
+
+.carousel-indicators {
+
+	li {
+		background-color: $white;
+	}
+
+	li.active {
+		background-color: $brown;
+	}
+}
+
+
+.carousel-inner {
+
+	>.item {
+		height: 500px;
+	}
+}
+
+.carousel-control {
+
+	> span {
+		position: absolute;
+		top: 45%;
+	}
+}
+
+.carousel-caption {
+	padding-bottom: 80px;
+
+	.carousel-title {
+		font-family: 'Acryle';
+		font-size: 160px;
+		margin-bottom: -55px;
+		z-index: 999;
+		position: relative;
+	}
+
+	.carousel-text-holder {
+		@include carousel-grd;
+		position: relative;
+		width: 75%;
+		height: 100px;
+		padding: 25px;
+		margin: 0 auto;
+
+		.carousel-text {
+			font-size: 18px;
+		}
+	}
+
+	.carousel-btn {
+		@include border-radius(5px);
+		position: absolute;
+		bottom: -15px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 190px;
+		height: 35px;
+		background-color: $brown;
+
+		&:hover {
+			background-color: lighten($brown, 5%);
+		}
+
+		a {
+			color: $white;
+			text-transform: uppercase;
+			font-size: 14px;
+			line-height: 35px;
+			width: 190px;
+			height: 35px;
+			display: block;
+		}
+	}
+}
+
+.about-carousel {
+	height: 270px;
+
+	> .carousel-inner > .item {
+		height: 270px;
+
+		> .carousel-caption {
+			top: 20px;
+			bottom: 0;
+		}
+	}
+}
+
+.carousel-about-caption {
+	padding-bottom: 40px;
+
+
+	.carousel-about-title {
+		font-size: 20px;
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom: 30px;
+
+		&:before,
+		&:after {
+			content: ' ';
+			border-bottom: 1px solid $white-op;
+			position: absolute;
+			top: 15px;
+			width: 25%;
+			height: 1px;
+		}
+
+		&:before {
+			margin-left: -26%;
+		}
+
+		&:after {
+			margin-left: 1%;
+		}
+	}
+
+	.carousel-about-text-holder {
+		background-color: transparent;
+		position: relative;
+
+		.carousel-about-text {
+			font-size: 16px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

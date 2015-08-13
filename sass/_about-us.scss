@@ -1,0 +1,57 @@
+@import 'colors';
+
+.about-us {
+	position: relative;
+	height: 270px;
+	overflow: hidden;
+}
+
+.bg {
+	background: url('http://www.mrwallpaper.com/wallpapers/summer-girls.jpg') repeat;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.top-brown-border {
+	position: absolute;
+	top: -20px;
+	left: 33%;
+	width: 33%;
+	height: 6px;
+	background-color: $brown;
+}
+
+.blue-grad {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(35, 82, 124, .8);
+}
+
+.sign-left,
+.sign-right {
+	position: absolute;
+	width: 43px;
+	height: 40px;
+}
+
+.sign-left {
+	background: url('../img/idezojel_lent.png') no-repeat;
+	bottom: -40px;
+	left: 0;
+}
+
+.sign-right {
+	background: url('../img/idezojel_fent.png') no-repeat;
+	top: -65px;
+	right: 0;
+}
+
+
+

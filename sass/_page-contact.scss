@@ -1,0 +1,54 @@
+@import 'compass/css3';
+@import 'basic';
+@import 'colors';
+
+
+.contact-img-holder {
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.contact-form-holder {
+	border-top: 6px solid $brown;
+
+	.contact-title {
+		font-size: 30px;
+	}
+
+	.contact {
+		padding-left: 40px;
+
+		li {
+			line-height: 20px;
+			font-size: 16px;
+			position: relative;
+
+			span {
+				@include inline-block();
+				width: 160px;
+				margin-right: 10px;
+				color: $blue;
+			}
+
+			a {
+				color: $blue;
+
+				&:hover {
+					color: $brown;
+				}
+			}
+		}
+
+		.icon {
+			> i {
+				color: $brown-grd;
+				position: absolute;
+				left: -30px;
+				top: 3px;
+			}
+		}
+	}
+}
+
+

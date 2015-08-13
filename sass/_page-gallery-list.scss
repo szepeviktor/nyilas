@@ -1,0 +1,136 @@
+@import 'basic';
+@import 'colors';
+
+
+.gallery-list-holder {
+	height: 340px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+
+	.gallery-imgs-holder {
+		height: 225px;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 25px;
+
+		.anim-helper {
+			width: 100%;
+			height: 100%;
+			margin-top: -225px;
+		}
+
+		.gallery-bgr-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				overflow: hidden;
+			}
+
+			.img-hover-helper {
+				@include transition(opacity .3s);
+				@include opacity(0);
+				visibility: hidden;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: $brown-grd;
+				color: $white;
+				text-align: center;
+				line-height: 225px;
+			}
+
+			&:hover .img-hover-helper {
+				@include opacity(1);
+				visibility: visible;
+			}
+		}
+
+		.gallery-item {
+			width: calc(100% / 3);
+			height: 50%;
+			float: left;
+			position: relative;
+			overflow: hidden;
+
+
+			&:hover .gallery-hover-helper {
+				background-color: $brown-grd;
+			}
+
+			&:hover .gallery-hover-helper:before {
+				border-top: 30px solid $brown;
+			}
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.gallery-hover-helper {
+				@include transition(all .3s);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: $blue-grd;
+
+				&:before {
+					@include transition(all .3s);
+					content: ' ';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 0;
+					border-top: 30px solid $blue;
+					border-right: 30px solid transparent;
+				}
+			}
+
+			.gallery-item-title {
+				width: 100%;
+				height: 100%;
+				color: $white;
+				font-size: 16px;
+				position: absolute;
+				text-align: center;
+				line-height: 110px;
+			}
+		}
+	}
+
+	.gallery-text-holder {
+		text-align: center;
+
+		.gallery-title {
+			font-size: 20px;
+			line-height: 23px;
+		}
+
+		.gallery-text {
+			font-size: 18px;
+			line-height: 23px;
+			color: $grey-text;
+		}
+	}
+}
+
+
+
+
+
+
