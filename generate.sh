@@ -10,6 +10,7 @@ declare -a PAGES=(
     static.php
 )
 declare -A LINKS=()
+declare -i SLASHES
 
 # Halt on all errors
 set -e
@@ -18,16 +19,24 @@ set -e
 for PAGE in ${PAGES[*]}; do
     if [ "${PAGE%index.php}" = "$PAGE" ]; then
         LINK="${PAGE%.php}"
+        BASE="../"
     else
         # An index.php
         LINK="${PAGE%index.php}"
         [ -z "$LINK" ] && LINK="."
+        BASE="./"
     fi
+    SLASHES="$(grep -c "/" <<< "$LINK" || true)"
+    for PARENT in $(seq 1 "$SLASHES"); do
+        BASE="../${BASE}"
+    done
 
     echo "$PAGE -> ${LINK}/index.html"
 
     mkdir -p "${GH_REPO}/${LINK}" 2> /dev/null || true
     php "$PAGE" > "${GH_REPO}/${LINK}/index.html"
+    # Links are relative from /
+    sed -i -e "s;<title>;<base href='${BASE}'>\n<title>;g" "${GH_REPO}/${LINK}/index.html"
 
     LINKS+=( [${PAGE}]="$LINK" )
 done
