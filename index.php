@@ -1,7 +1,10 @@
-<?php include('head.php'); ?>
+<?php
 
-<?php include('inc/header.php'); ?>
+// "include" is a statement
+include 'head.php';
 
-<?php include('inc/page-home.php'); ?>
+include 'inc/header.php';
 
-<?php include('footer.php'); ?>
+include 'inc/page-home.php';
+
+include 'footer.php';
