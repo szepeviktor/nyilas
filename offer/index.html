@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nyilas Fogadó</title>
+
+	<meta charset='utf-8'>
+	<meta http-equiv="Content-Language" content="hu">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="copyright" content="">
+	<meta name="email" content="">
+	<meta name="Rating" content="General">
+	<meta name="Distribution" content="Global">
+	<meta name="Robots" content="INDEX,FOLLOW">
+	<meta name="Revisit-after" content="1 Week">
+	<link rel="shortcut icon" href="">
+
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/slidebars.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slidebars.js"></script>
+
+<!--	<script>
+		$(document).ready(function () {
+			var sectionBox = $('.section-box-content > .section-box-btn');
+		});
+	</script>-->
+
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$.slidebars();
+			});
+		}) (jQuery);
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			var holder = $('.anim-helper');
+
+			$('.gallery-list-holder').click(function() {
+				holder.animate({'margin-top': '-225px'}, 100);
+				$(this).find('.anim-helper').animate({'margin-top': '0px'}, 600);
+			});
+		});
+
+		$(window).scroll(function(e){
+			parallax();
+		});
+		function parallax(){
+			var scrolled = $(window).scrollTop();
+			$('.bg').css('top',-(scrolled*0.2)+'px');
+		}
+	</script>
+
+
+
+</head>
+<body>
+
+<div id="sb-site">
+
+
+<div class="container-fluid header hidden-xs hidden-sm">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pd0">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="logo">
+							<img src="img/logo.png" alt="nyilas-fogado-logo" class="img-responsive"/>
+						</div>
+						<div class="nav-line">
+							<ul class="navigation">
+								<li><a href="./">Aktualitások</a></li>
+								<li><a href="static/">Bemutatkozás</a></li>
+								<li><a href="gallery-list/">Étterem</a></li>
+								<li><a href="#">Rendezvényterem</a></li>
+								<li><a href="offer/">Szállás</a></li>
+								<li><a href="#">Wellness centrum</a></li>
+								<li><a href="contact/">Elérhetőségek</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grad-line"></div>
+			<div class="container-fluid hidden-xs hidden-sm">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pd0">
+			<div class="sec-menu-line">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="sec-menu">
+								<ul class="sec-navigation">
+									<li><a href="#">Étlap</a></li>
+									<li><a href="#">Itallap</a></li>
+									<li><a href="#">Wellness és szállás csomagjaink</a></li>
+									<li><a href="#">Ajánlataink cégeknek</a></li>
+									<li><a href="#">Galéria</a></li>
+									<li><span class="visible-lg-inline">Nyelvválasztó:</span>
+										<a href="#" class="active"><img src="img/hu.png" alt="zaszlo"/></a>
+										<a href="#"><img src="img/gb.png" alt="zaszlo"/></a>
+										<a href="#"><img src="img/de.png" alt="zaszlo"/></a>
+										<a href="#"><img src="img/ru.png" alt="zaszlo"/></a>
+										<a href="#"><img src="img/fr.png" alt="zaszlo"/></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="container visible-xs visible-sm">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 pd0">
+			<div class="mobile-nav">
+				<div class="logo">
+					<img src="img/logo.png" alt="nyilas-fogado-logo" class="img-responsive pull-left"/>
+				</div>
+				<i class="fa fa-bars fa-2x pull-right sb-toggle-right"></i>
+			</div>
+			<div class="grad-line"></div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pd0">
+			<div class="subpage-top-holder">
+				<img src="img/subpage_header.png" alt="background"/>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="subpage-title">Page title</div>
+							<div class="subpage-link">
+								<i class="fa fa-chevron-circle-right"></i>
+								<a href="#">Főoldal</a><a href="#">Subpage</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container white-bgr">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 subpage pd0 left-side-holder">
+			<div class="static-page-text mgb40">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias, beatae consequatur culpa cupiditate dolorum eligendi eveniet expedita fugiat harum maiores optio ratione recusandae reiciendis repudiandae, rerum soluta suscipit veniam, vero voluptatum. Ab aperiam assumenda quia! A adipisci alias deserunt doloribus facere fugiat in incidunt, ipsam maiores minus neque, praesentium qui repellat saepe veniam. Ab accusantium aliquam amet architecto dolorem esse eum expedita fugiat ipsa iure labore modi nam neque nesciunt nisi nostrum nulla porro possimus, ratione repellat reprehenderit rerum sequi sunt? Aliquam corporis cum dolor dolorem dolores, eaque eius illo laboriosam molestias, nobis optio porro quod saepe velit voluptatem. Adipisci, alias cum dignissimos fuga illo illum ipsa iste iusto maiores non odio odit pariatur quasi sequi suscipit tempore voluptatibus?
+			</div>
+
+			<div class="offer-box-holder">
+	<div class="offer-box-top">
+		<div class="offer-box-top-left">
+			<img src="http://badsentinel.com/wp-content/uploads/2013/04/Summer-Girls-42.jpg" alt="plchldr_img" class="img-responsive"/>
+		</div>
+		<div class="offer-box-top-right">
+			<h1 class="offer-title">Ajánlat megnevezése</h1>
+			<ul class="offer-info">
+				<li class="blue-bold-txt">2fő / 4 éjszaka</li>
+				<li>Hétfőtől péntekig időszakban választható</li>
+				<li class="blue-light-txt">06.01. - 08.31.</li>
+			</ul>
+			<div class="offer-price">80.500 Ft</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="offer-box-bottom">
+		<p>A csomag tartalma</p>
+		<ul class="offer-details">
+			<li>elhelyezés 2 ágyas vagy francia ágyas szobában</li>
+			<li>svédasztalos reggeli</li>
+			<li>2 db belépő az Állatparkba</li>
+			<li>2 db belépő az Élményfürdőbe</li>
+			<li>ingyenes kerékpárhasználat</li>
+			<li>korlátlan Wi-Fi</li>
+			<li>zárt parkoló</li>
+			<li>ingyenes Wellness (úszómedence, finn szauna csaobbanó medencével, infraszauna, jakuzzi, jade köves ágy, sószoba, szénaszoba, vízágy, kondícionáló terem)</li>
+			<li>csoportos mozgásprogramjainkon 50%-os kedvezménnyel vehet részt (jóga, aquafitness, alakformáló, zsírégetőóra)</li>
+		</ul>
+	</div>
+</div>			<div class="offer-box-holder">
+	<div class="offer-box-top">
+		<div class="offer-box-top-left">
+			<img src="http://badsentinel.com/wp-content/uploads/2013/04/Summer-Girls-20.jpg" alt="plchldr_img" class="img-responsive"/>
+		</div>
+		<div class="offer-box-top-right">
+			<h1 class="offer-title">Ajánlat megnevezése</h1>
+			<ul class="offer-info">
+				<li class="blue-bold-txt">2fő / 4 éjszaka</li>
+				<li>Hétfőtől péntekig időszakban választható</li>
+				<li class="blue-light-txt">06.01. - 08.31.</li>
+			</ul>
+			<div class="offer-price">80.500 Ft</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="offer-box-bottom">
+		<p>A csomag tartalma</p>
+		<ul class="offer-details">
+			<li>elhelyezés 2 ágyas vagy francia ágyas szobában</li>
+			<li>svédasztalos reggeli</li>
+			<li>2 db belépő az Állatparkba</li>
+			<li>2 db belépő az Élményfürdőbe</li>
+			<li>ingyenes kerékpárhasználat</li>
+			<li>korlátlan Wi-Fi</li>
+			<li>zárt parkoló</li>
+			<li>ingyenes Wellness (úszómedence, finn szauna csaobbanó medencével, infraszauna, jakuzzi, jade köves ágy, sószoba, szénaszoba, vízágy, kondícionáló terem)</li>
+			<li>csoportos mozgásprogramjainkon 50%-os kedvezménnyel vehet részt (jóga, aquafitness, alakformáló, zsírégetőóra)</li>
+		</ul>
+	</div>
+</div>			<div class="offer-box-holder">
+	<div class="offer-box-top">
+		<div class="offer-box-top-left">
+			<img src="http://aces.gr/wp-content/uploads/2013/07/summer-girls-29.jpg" alt="plchldr_img" class="img-responsive"/>
+		</div>
+		<div class="offer-box-top-right">
+			<h1 class="offer-title">Ajánlat megnevezése</h1>
+			<ul class="offer-info">
+				<li class="blue-bold-txt">2fő / 4 éjszaka</li>
+				<li>Hétfőtől péntekig időszakban választható</li>
+				<li class="blue-light-txt">06.01. - 08.31.</li>
+			</ul>
+			<div class="offer-price">80.500 Ft</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="offer-box-bottom">
+		<p>A csomag tartalma</p>
+		<ul class="offer-details">
+			<li>elhelyezés 2 ágyas vagy francia ágyas szobában</li>
+			<li>svédasztalos reggeli</li>
+			<li>2 db belépő az Állatparkba</li>
+			<li>2 db belépő az Élményfürdőbe</li>
+			<li>ingyenes kerékpárhasználat</li>
+			<li>korlátlan Wi-Fi</li>
+			<li>zárt parkoló</li>
+			<li>ingyenes Wellness (úszómedence, finn szauna csaobbanó medencével, infraszauna, jakuzzi, jade köves ágy, sószoba, szénaszoba, vízágy, kondícionáló terem)</li>
+			<li>csoportos mozgásprogramjainkon 50%-os kedvezménnyel vehet részt (jóga, aquafitness, alakformáló, zsírégetőóra)</li>
+		</ul>
+	</div>
+</div>
+		</div>
+		<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pd0 right-side-holder">
+			<div class="right-side">
+				<div class="side-header sh-brown">
+					Some text here
+				</div>
+
+				<div class="side-header sh-brown">
+	Some text here
+</div>
+<div class="right-section-box">
+	<div class="section-box-content">
+		<div class="section-box-img">
+			<img src="http://www.isysportal.com/images/photoalbum/photoalbum9/Isys-Beach-Girls-1-frg235.jpg" alt="plchldr_img" class="img-responsive"/>
+		</div>
+		<div class="section-text-holder">
+			<div class="section-box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut beatae
+				id ipsam itaque mollitia natus nemo quae, quasi similique. Illum laborum neque perferendis veniam vitae?
+				Inventore necessitatibus similique sit.
+			</div>
+		</div>		<div class="section-box-btn">
+			<a href="#">button-text</a>
+		</div>
+	</div>
+</div>				<div class="side-header sh-brown">
+	Some text here
+</div>
+<div class="right-section-box">
+	<div class="section-box-content">
+		<div class="section-box-img">
+			<img src="http://cdn.rsvlts.com/wp-content/uploads/2013/03/Girls-of-Summer-114.jpg" alt="plchldr_img" class="img-responsive"/>
+		</div>
+		<div class="section-text-holder">
+			<div class="section-box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut beatae
+				id ipsam itaque mollitia natus nemo quae, quasi similique. Illum laborum neque perferendis veniam vitae?
+				Inventore necessitatibus similique sit.
+			</div>
+		</div>		<div class="section-box-btn">
+			<a href="#">button-text</a>
+		</div>
+	</div>
+</div>				<div class="side-header sh-brown">
+	Some text here
+</div>
+<div class="right-section-box">
+	<div class="section-box-content">
+		<div class="section-box-img">
+			<img src="http://www.isysportal.com/images/photoalbum/photoalbum9/Isys-Beach-Girls-1-frg235.jpg" alt="plchldr_img" class="img-responsive"/>
+		</div>
+		<div class="section-text-holder">
+			<div class="section-box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut beatae
+				id ipsam itaque mollitia natus nemo quae, quasi similique. Illum laborum neque perferendis veniam vitae?
+				Inventore necessitatibus similique sit.
+			</div>
+		</div>		<div class="section-box-btn">
+			<a href="#">button-text</a>
+		</div>
+	</div>
+</div>
+				<div class="clearfix"></div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 pd0">
+			<div class="footer-bottom">
+				Nyilas Fogadó, Nyíregyháza - 2015. Minden jog fenntartva.
+			</div>
+		</div>
+	</div>
+</div>
+</div><!-- SB SITE CLOSER TAG -->
+
+<div class="sb-slidebar sb-right sb-style-push">
+	<div class="lang-select">
+		<a href="#" class="active"><img src="img/hu.png" alt="zaszlo"/></a>
+		<a href="#"><img src="img/gb.png" alt="zaszlo"/></a>
+		<a href="#"><img src="img/de.png" alt="zaszlo"/></a>
+		<a href="#"><img src="img/ru.png" alt="zaszlo"/></a>
+		<a href="#"><img src="img/fr.png" alt="zaszlo"/></a>
+	</div>
+	<ul class="mobile-menu-list">
+		<li><a href="./">Aktualitások</a></li>
+		<li><a href="static/">Bemutatkozás</a></li>
+		<li><a href="gallery-list/">Étterem</a></li>
+		<li><a href="#">Rendezvényterem</a></li>
+		<li><a href="offer/">Szállás</a></li>
+		<li><a href="#">Wellness centrum</a></li>
+		<li><a href="contact/">Elérhetőségek</a></li>
+		<li><a href="#">Étlap</a></li>
+		<li><a href="#">Itallap</a></li>
+		<li><a href="#">Wellness és szállás csomagjaink</a></li>
+		<li><a href="#">Ajánlataink cégeknek</a></li>
+		<li><a href="#">Galéria</a></li>
+	</ul>
+</div>
+</body>
+</html>

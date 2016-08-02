@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nyilas Fogadó</title>
+
+	<meta charset='utf-8'>
+	<meta http-equiv="Content-Language" content="hu">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="copyright" content="">
+	<meta name="email" content="">
+	<meta name="Rating" content="General">
+	<meta name="Distribution" content="Global">
+	<meta name="Robots" content="INDEX,FOLLOW">
+	<meta name="Revisit-after" content="1 Week">
+	<link rel="shortcut icon" href="">
+
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/slidebars.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slidebars.js"></script>
+
+<!--	<script>
+		$(document).ready(function () {
+			var sectionBox = $('.section-box-content > .section-box-btn');
+		});
+	</script>-->
+
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$.slidebars();
+			});
+		}) (jQuery);
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			var holder = $('.anim-helper');
+
+			$('.gallery-list-holder').click(function() {
+				holder.animate({'margin-top': '-225px'}, 100);
+				$(this).find('.anim-helper').animate({'margin-top': '0px'}, 600);
+			});
+		});
+
+		$(window).scroll(function(e){
+			parallax();
+		});
+		function parallax(){
+			var scrolled = $(window).scrollTop();
+			$('.bg').css('top',-(scrolled*0.2)+'px');
+		}
+	</script>
+
+
+
+</head>
+<body>
+
+<div id="sb-site">
+
+
+<div class="container-fluid header hidden-xs hidden-sm">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pd0">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="logo">
+							<img src="img/logo.png" alt="nyilas-fogado-logo" class="img-responsive"/>
+						</div>
+						<div class="nav-line">
+							<ul class="navigation">
+								<li><a href="./">Aktualitások</a></li>
+								<li><a href="static/">Bemutatkozás</a></li>
+								<li><a href="gallery-list/">Étterem</a></li>
+								<li><a href="#">Rendezvényterem</a></li>
+								<li><a href="offer/">Szállás</a></li>
+								<li><a href="#">Wellness centrum</a></li>
+								<li><a href="contact/">Elérhetőségek</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grad-line"></div>
+			<div class="container-fluid hidden-xs hidden-sm">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pd0">
+			<div class="sec-menu-line">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="sec-menu">
+								<ul class="sec-navigation">
+									<li><a href="#">Étlap</a></li>
+									<li><a href="#">Itallap</a></li>
+									<li><a href="#">Wellness és szállás csomagjaink</a></li>
+									<li><a href="#">Ajánlataink cégeknek</a></li>
+									<li><a href="#">Galéria</a></li>
+									<li><span class="visible-lg-inline">Nyelvválasztó:</span>
+										<a href="#" class="active"><img src="img/hu.png" alt="zaszlo"/></a>
+										<a href="#"><img src="img/gb.png" alt="zaszlo"/></a>
+										<a href="#"><img src="img/de.png" alt="zaszlo"/></a>
+										<a href="#"><img src="img/ru.png" alt="zaszlo"/></a>
+										<a href="#"><img src="img/fr.png" alt="zaszlo"/></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="container visible-xs visible-sm">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 pd0">
+			<div class="mobile-nav">
+				<div class="logo">
+					<img src="img/logo.png" alt="nyilas-fogado-logo" class="img-responsive pull-left"/>
+				</div>
+				<i class="fa fa-bars fa-2x pull-right sb-toggle-right"></i>
+			</div>
+			<div class="grad-line"></div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pd0">
+			<div class="subpage-top-holder">
+				<img src="img/subpage_header.png" alt="background"/>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="subpage-title">Page title</div>
+							<div class="subpage-link">
+								<i class="fa fa-chevron-circle-right"></i>
+								<a href="#">Főoldal</a><a href="#">Subpage</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container subpage white-bgr">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="contact-img-holder">
+				<img src="img/nyilas_kapcsolat.jpg" alt="nyilas-fogadó" class="img-responsive"/>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<div class="map-holder">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5338.78178426404!2d21.734440737434362!3d48.006157470656866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47389f53a4b85d31%3A0xb3a7ffa98d0f2e75!2zTWFqw6FsaXMgdS4gMjksIE55w61yZWd5aMOhemEsIDQ0MzE!5e0!3m2!1shu!2shu!4v1438680618859" width="100%" height="380" frameborder="0" style="border:0; pointer-events:none;" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<div class="contact-form-holder">
+						<h1 class="contact-title">Nyilas Fogadó</h1>
+						<ul class="contact">
+							<li class="icon"><i class="fa fa-map-marker"></i><span>Cím:</span>H-4431 Nyíregyháza-Sóstófürdő,</li>
+							<li><span></span>Majális út 29.</li>
+							<li class="icon"><i class="fa fa-user"></i><span>Kontakt személy:</span>Nyilas Mihály</li>
+							<li>&nbsp;</li>
+							<li class="icon"><i class="fa fa-phone"></i><span>Telefon:</span>+36 (42) 596 - 845</li>
+							<li><span class="brown-txt">Étterem:</span>+36 (42) 596 - 845</li>
+							<li><span class="brown-txt">Szállás:</span>+36 (42) 596 - 846</li>
+							<li>&nbsp;</li>
+							<li class="icon"><i class="fa fa-fax"></i><span>Fax:</span>+36 42 596 817</li>
+							<li>&nbsp;</li>
+							<li class="icon"><i class="fa fa-envelope"></i><span>Email:</span><a href="mailto:info@nyilasfogado.hu">info@nyilasfogado.hu</a></li>
+							<li><span></span><a href="mailto:marketing@nyilasfogado.hu">marketing@nyilasfogado.hu</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 pd0">
+			<div class="footer-bottom">
+				Nyilas Fogadó, Nyíregyháza - 2015. Minden jog fenntartva.
+			</div>
+		</div>
+	</div>
+</div>
+</div><!-- SB SITE CLOSER TAG -->
+
+<div class="sb-slidebar sb-right sb-style-push">
+	<div class="lang-select">
+		<a href="#" class="active"><img src="img/hu.png" alt="zaszlo"/></a>
+		<a href="#"><img src="img/gb.png" alt="zaszlo"/></a>
+		<a href="#"><img src="img/de.png" alt="zaszlo"/></a>
+		<a href="#"><img src="img/ru.png" alt="zaszlo"/></a>
+		<a href="#"><img src="img/fr.png" alt="zaszlo"/></a>
+	</div>
+	<ul class="mobile-menu-list">
+		<li><a href="./">Aktualitások</a></li>
+		<li><a href="static/">Bemutatkozás</a></li>
+		<li><a href="gallery-list/">Étterem</a></li>
+		<li><a href="#">Rendezvényterem</a></li>
+		<li><a href="offer/">Szállás</a></li>
+		<li><a href="#">Wellness centrum</a></li>
+		<li><a href="contact/">Elérhetőségek</a></li>
+		<li><a href="#">Étlap</a></li>
+		<li><a href="#">Itallap</a></li>
+		<li><a href="#">Wellness és szállás csomagjaink</a></li>
+		<li><a href="#">Ajánlataink cégeknek</a></li>
+		<li><a href="#">Galéria</a></li>
+	</ul>
+</div>
+</body>
+</html>
